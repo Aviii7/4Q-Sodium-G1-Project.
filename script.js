@@ -1,19 +1,32 @@
-const catto = document.getElementById("catto");
-const obstacles = document.getElementById("obstacles");
+const dino = document.getElementById("dino");
+const cactus = document.getElementById("cactus");
+
 function jump() {
-    if (catto.classList != "jump")
-    catto.classList.add("jump");
+  if (dino.classList != "jump") {
+    dino.classList.add("jump");
+
     setTimeout(function () {
-        catto.classList.remove("jump");
+      dino.classList.remove("jump");
     }, 300);
+  }
 }
+
 let isAlive = setInterval(function () {
-    let cattoTop = parseInt(window.getComputedStyle(catto).getPropertyValue("top"));
-    let obstaclesLeft = parseInt(window.getComputedStyle(obstacles).getPropertyValue("left"));
-    if (obstacles < 50 && cactusLeft > 0 && cattoTop >= 140) {
-        alert("Game Over!");
-    }
+  // get current dino Y position
+  let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+
+  // get current cactus X position
+  let cactusLeft = parseInt(
+    window.getComputedStyle(cactus).getPropertyValue("left")
+  );
+
+  // detect collision
+  if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
+    // collision
+    alert("Game Over!");
+  }
 }, 10);
+
 document.addEventListener("keydown", function (event) {
-    jump();
+  jump();
 });
