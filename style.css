@@ -1,10 +1,10 @@
 .game {
   width: 600px;
   height: 200px;
-  background-image: url("bg.jpg");
-  border: 1px solid black;
+  background-image: url("bg.png");
+  border: 5px solid black;
+  margin-top: 100px;
   margin: auto;
-  top: 100px;
 }
 
 #catto {
@@ -14,7 +14,7 @@
   background-size: 50px 50px;
   position: relative;
   top: 150px;
-  right: 3px;
+  padding-right: 3px;
 }
 
 .jump {
