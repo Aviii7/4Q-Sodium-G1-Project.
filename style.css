@@ -1,6 +1,7 @@
 .game {
   width: 600px;
   height: 200px;
+  background-image: url("bg.png");
   border: 1px solid black;
   margin: auto;
   top: 100px;
