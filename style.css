@@ -14,6 +14,40 @@
   top: 150px;
 }
 
+.catto {
+  animation: running 1s linear;
+}
+
+@keyframes running {
+  0% {
+    background-image: url("catto.png") no-repeat -32px -178px;
+	  width: 112px;
+	  height: 96px;
+  }
+
+  25% {
+    background-image: url("catto.png") no-repeat -192px -183px;
+	  width: 112px;
+	  height: 91px;
+  }
+
+  50% {
+    background-image: url("catto.png") no-repeat -352px -178px;
+	  width: 112px;
+	  height: 96px;
+  }
+  75% {
+    background-image: url("catto.png") no-repeat -512px -184px;
+	  width: 112px;
+	  height: 90px;
+  }
+  100% {
+    background-image: url("catto.png") no-repeat -192px -183px;
+	  width: 112px;
+	  height: 91px;
+  }
+}
+
 .jump {
   animation: jump 0.3s linear;
 }
