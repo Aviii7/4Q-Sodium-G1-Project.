@@ -3,6 +3,7 @@
   height: 200px;
   border: 1px solid black;
   margin: auto;
+  top: 100px;
 }
 
 #catto {
@@ -12,7 +13,7 @@
   background-size: 50px 50px;
   position: relative;
   top: 150px;
-  right: 1px;
+  right: 3px;
 }
 
 .jump {
