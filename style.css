@@ -18,6 +18,8 @@
 }
 
 .jump {
+  background-image: url("jump.png");
+  background-size: 50px 50px;
   animation: jump 0.3s linear;
 }
 
