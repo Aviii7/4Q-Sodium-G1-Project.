@@ -2,14 +2,13 @@ const catto = document.getElementById("catto");
 const obstacles = document.getElementById("obstacles");
 
 function jump() {
-  if (catto.classList != "jump") {
-    catto.classList.add("jump");
-
-    setTimeout(function () {
-      catto.classList.remove("jump");
-    }, 300);
+    if (!catto.classList.contains("jump")) {
+      catto.classList.add("jump");
+      setTimeout(() => {
+        catto.classList.remove("jump");
+      }, 400);
+    }
   }
-}
 
 let isAlive = setInterval(function () {
   // get current catto Y position
@@ -28,5 +27,7 @@ let isAlive = setInterval(function () {
 }, 10);
 
 document.addEventListener("keydown", function (event) {
-  jump();
+  if (event.code === "Space") {
+    jump();
+  }
 });
