@@ -4,7 +4,7 @@ const obstacles = document.getElementById("obstacles");
 function jump() {
     if (!catto.classList.contains("jump")) {
       catto.classList.add("jump");
-      setTimeout(() => {
+      setTimeout(function () {
         catto.classList.remove("jump");
       }, 400);
     }
