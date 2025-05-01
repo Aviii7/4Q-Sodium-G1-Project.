@@ -3,7 +3,8 @@
   height: 200px;
   background-image: url("bg.png");
   border: 3px solid #6B5059;
-  margin-top: 100px;
+  margin-top: 150px;
+  margin-left: 200px;
 }
 
 #catto {
@@ -13,7 +14,7 @@
   background-size: 50px 50px;
   position: relative;
   top: 150px;
-  right: 20px;
+  left: 10px;
 }
 
 .jump {
