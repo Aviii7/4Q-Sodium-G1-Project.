@@ -15,7 +15,7 @@
 }
 
 .catto {
-  animation: running 1s linear;
+  animation: running 1s linear infinite;
 }
 
 @keyframes running {
