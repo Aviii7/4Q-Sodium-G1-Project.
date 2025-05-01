@@ -1,15 +1,15 @@
 .game {
-  width: 600px;
-  height: 200px;
+  width: 1000px;
+  height: 600px;
   border: 1px solid black;
   margin: auto;
 }
 
 #catto {
-  width: 50px;
-  height: 50px;
-  background-image: url("catto.png");
-  background-size: 50px 50px;
+  width: 112px;
+  height: 96px;
+  background-image: url("catto.png") no-repeat -32px -178px;
+  background-size: 112px 96px;
   position: relative;
   top: 150px;
 }
@@ -44,7 +44,7 @@
   100% {
     background-image: url("catto.png") no-repeat -192px -183px;
 	  width: 112px;
-	  height: 91px;
+ 	  height: 91px;
   }
 }
 
